@@ -5,7 +5,7 @@ import Dev from '../pages/dev';
 function routes() {
   return (
     <Routes>
-      <Route path="/" element={<Doc />} />
+      <Route path="/doc" element={<Doc />} />
       <Route path="/dev" element={<Dev />} />
     </Routes>
   )
