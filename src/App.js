@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { useNavigate } from 'react-router-dom';
+import { Tabs } from 'antd';
+import Routes from './routes';
+
+const { TabPane } = Tabs;
 
 function App() {
+  let navigate = useNavigate();
+
+  function callback(key) {
+    navigate(`/${key}`);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Tabs defaultActiveKey="" centered onChange={callback}>
+        <TabPane tab="使用手册" key="" />
+        <TabPane tab="开发" key="dev" />
+      </Tabs>
+      <Routes />
     </div>
   );
 }
