@@ -49,7 +49,7 @@ export const menus = [
       },
       {
         key: 'pageEdit',
-        title: '工作区概览',
+        title: '页面操作',
         children: [
           {
             key: 'doc-pageEdit-1',
@@ -76,27 +76,27 @@ export const menus = [
         ]
       },
       {
-        key: 'docComponents',
+        key: 'docComponent',
         title: '组件',
         children: [
           {
-            key: 'doc-docComponents-1',
+            key: 'doc-docComponent-1',
             name: '组件信息',
           },
           {
-            key: 'doc-docComponents-2',
+            key: 'doc-docComponent-2',
             name: '组件操作',
           },
           {
-            key: 'doc-docComponents-3',
+            key: 'doc-docComponent-3',
             name: '基础组件',
           },
           {
-            key: 'doc-docComponents-4',
+            key: 'doc-docComponent-4',
             name: '组件封装',
           },
           {
-            key: 'doc-docComponents-5',
+            key: 'doc-docComponent-5',
             name: '合成组件',
           }
         ]
