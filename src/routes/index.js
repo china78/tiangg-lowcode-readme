@@ -3,7 +3,7 @@ import Manage from '../pages/doc/components/manage';
 import WorkArea from '../pages/doc/components/workArea';
 import PageEdit from '../pages/doc/components/pageEdit';
 import PageTemplate from '../pages/doc/components/pageTemplate';
-import DocComponents from '../pages/doc/components/docComponent';
+import DocComponent from '../pages/doc/components/docComponent';
 import Canvas from '../pages/doc/components/canvas';
 import ComponentTree from '../pages/doc/components/componentTree';
 import ComponentAttribute from '../pages/doc/components/componentAttribute';
@@ -32,8 +32,8 @@ function routes() {
           <Route path="pageTemplate" element={<PageTemplate />} >
             <Route path="*" element={<PageTemplate />} />
           </Route>
-          <Route path="docComponents" element={<DocComponents />} >
-            <Route path="*" element={<DocComponents />} />
+          <Route path="docComponent" element={<DocComponent />} >
+            <Route path="*" element={<DocComponent />} />
           </Route>
           <Route path="canvas" element={<Canvas />} >
             <Route path="*" element={<Canvas />} />
