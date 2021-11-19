@@ -2,7 +2,6 @@ import React from 'react';
 import { Typography, Divider } from 'antd';
 import canvas1 from '../../../../assets/imgs/canvas1.gif';
 import canvas2 from '../../../../assets/imgs/canvas2.gif';
-import canvas3 from '../../../../assets/imgs/canvas3.gif';
 const { Title } = Typography;
 
 const Canvas = () => {
@@ -35,7 +34,6 @@ const Canvas = () => {
         </div>
         <div className="section">
           <Title level={4}>居中</Title>
-          <div className="imgBox"><img style={{ width: '70%' }} src={canvas3} alt="canvas3" /></div>
           <p>对于应用了”楼层模式“的组件，其子组件样式面板多了一个居中选项，开启后，组件将自适应不同宽度设备居中显示。</p>
         </div>
       </div>
