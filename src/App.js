@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { useNavigate } from 'react-router-dom';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu, BackTop } from 'antd';
 import Routes from './routes';
 import logo from './assets/imgs/logo.png';
 import { menus } from './assets/menus.js';
@@ -135,6 +135,7 @@ function App() {
             <Routes />
           </div>
         </Content>
+        <BackTop />
         <Footer style={{ textAlign: 'center' }}>A low code editor - tiangg</Footer>
       </Layout>
     </Layout>

@@ -232,7 +232,7 @@ tiangg-build`;
         <div className="imgBox"><img style={{ width: '60%' }} src={componentDev02} alt="componentDev02" /></div>
         <p>项目文件结构如下</p>
         <div className="imgBox"><img style={{ width: '60%' }} src={componentDev03} alt="componentDev03" /></div>
-        <p>可以看到，这是一个典型的 vue 工程。没错，tiangg组件本身与普通 vue 组件无异，只是在普通 vue 组件的基础上，我们添加了一些约定字段，使组件能被tiangg编辑器识别、配置。</p>
+        <p>可以看到，这是一个典型的 vue 工程。没错，tiangg组件本身与普通 vue 组件无异，只是在普通 vue 组件的基础上，我添加了一些约定字段，使组件能被tiangg编辑器识别、配置。</p>
         <p><code>/src/index.vue</code> 即为刚才创建的组件。组件开发的主要工作就是针对这个组件进行功能开发。</p>
         <p><code>/src/example.vue</code> 提供了一些简单的代码示例和说明。</p>
         <p><code>preview/</code> 目录下的文件是供开发预览使用的，最终发布的时候是不会打包此文件夹文件的，必要时可以按需修改其中的代码，比如测试组件传参（props）。</p>
