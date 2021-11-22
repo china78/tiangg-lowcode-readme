@@ -242,6 +242,10 @@ export const menus = [
         title: '脚本开发',
         children: [
           {
+            key: 'dev-script-0',
+            name: '简介',
+          },
+          {
             key: 'dev-script-1',
             name: '添加自定义属性',
           },
@@ -259,6 +263,10 @@ export const menus = [
         key: 'component',
         title: '脚本开发',
         children: [
+          {
+            key: 'dev-component-0',
+            name: '简介',
+          },
           {
             key: 'dev-component-1',
             name: '安装 tiangg-cli',
