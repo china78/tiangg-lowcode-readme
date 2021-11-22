@@ -8,6 +8,10 @@ export const menus = [
         title: '项目管理',
         children: [
           {
+            key: 'doc-manage-0',
+            name: '简介',
+          },
+          {
             key: 'doc-manage-1',
             name: '入口',
           },
@@ -25,6 +29,10 @@ export const menus = [
         key: 'workArea',
         title: '工作区概览',
         children: [
+          {
+            key: 'doc-workArea-0',
+            name: '简介',
+          },
           {
             key: 'doc-workArea-1',
             name: '组件',
@@ -52,6 +60,10 @@ export const menus = [
         title: '页面操作',
         children: [
           {
+            key: 'doc-pageEdit-0',
+            name: '简介',
+          },
+          {
             key: 'doc-pageEdit-1',
             name: '组场景',
           },
@@ -70,6 +82,10 @@ export const menus = [
         title: '页面模版',
         children: [
           {
+            key: 'doc-pageTemplate-0',
+            name: '简介',
+          },
+          {
             key: 'doc-pageTemplate-1',
             name: '如何生成页面模版',
           }
@@ -79,6 +95,10 @@ export const menus = [
         key: 'docComponent',
         title: '组件',
         children: [
+          {
+            key: 'doc-docComponent-0',
+            name: '简介',
+          },
           {
             key: 'doc-docComponent-1',
             name: '组件信息',
@@ -106,6 +126,10 @@ export const menus = [
         title: '画布',
         children: [
           {
+            key: 'doc-canvas-0',
+            name: '简介',
+          },
+          {
             key: 'doc-canvas-1',
             name: '移动端画布',
           },
@@ -120,6 +144,10 @@ export const menus = [
         title: '组件树',
         children: [
           {
+            key: 'doc-componentTree-0',
+            name: '简介',
+          },
+          {
             key: 'doc-componentTree-1',
             name: '组件树相关的操作',
           }
@@ -129,6 +157,10 @@ export const menus = [
         key: 'componentAttribute',
         title: '组件属性',
         children: [
+          {
+            key: 'doc-componentAttribute-0',
+            name: '简介',
+          },
           {
             key: 'doc-componentAttribute-1',
             name: '组件更新',
@@ -152,6 +184,10 @@ export const menus = [
         title: '样式',
         children: [
           {
+            key: 'doc-syles-0',
+            name: '简介',
+          },
+          {
             key: 'doc-syles-1',
             name: '基础模式',
           },
@@ -169,6 +205,10 @@ export const menus = [
         key: 'docScripts',
         title: '脚本',
         children: [
+          {
+            key: 'doc-docScripts-0',
+            name: '简介',
+          },
           {
             key: 'doc-docScripts-1',
             name: '使用',
@@ -250,12 +290,18 @@ export const menus = [
           {
             key: 'dev-component-8',
             name: '发布组件',
-          },
-          {
-            key: 'dev-component-9',
-            name: '特别说明 布局组件的开发',
           }
         ]
+      }
+    ]
+  },
+  {
+    key: 'think',
+    name: '系统核心实现思路',
+    children: [
+      {
+        key: 'desc',
+        title: '系统核心实现思路'
       }
     ]
   }

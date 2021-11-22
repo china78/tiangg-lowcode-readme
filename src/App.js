@@ -6,6 +6,24 @@ import Routes from './routes';
 import logo from './assets/imgs/logo.png';
 import { menus } from './assets/menus.js';
 import { useState } from 'react';
+import 'codemirror/addon/fold/foldcode.js';  // 代码折叠
+import 'codemirror/addon/fold/foldgutter.js'; // 代码折叠
+import 'codemirror/addon/fold/brace-fold.js'; // 代码折叠
+import 'codemirror/addon/fold/comment-fold.js'; // 代码折叠
+import 'codemirror/addon/hint/javascript-hint.js'; // 自动提示
+import 'codemirror/addon/hint/show-hint.js';   // 自动提示
+import 'codemirror/addon/lint/lint.js';  // 错误校验
+import 'codemirror/addon/lint/javascript-lint.js';  // js错误校验
+import 'codemirror/addon/selection/active-line.js';  // 当前行高亮
+import 'codemirror/lib/codemirror.js'
+import 'codemirror/mode/javascript/javascript.js'
+// css
+import 'codemirror/addon/fold/foldgutter.css';  // 代码折叠
+import 'codemirror/addon/hint/show-hint.css';  // 自动提示
+import 'codemirror/addon/lint/lint.css'  // 代码错误提示
+import 'codemirror/lib/codemirror.css' // 编辑器样式
+import 'codemirror/theme/idea.css'  // 主题: idea
+import 'codemirror/theme/solarized.css'
 
 const { SubMenu } = Menu;
 
@@ -15,11 +33,6 @@ function App() {
   let navigate = useNavigate();
   const [currentHeadMenuKey, setCurrentHeadMenuKey] = useState('doc');
   const [siderMenus, setSiderMenus] = useState(menus[0].children);
-  // eslint-disable-next-line no-unused-vars
-  const [keyPath, setKeyPath] = useState(['项目管理', '入口']);
-  // eslint-disable-next-line no-unused-vars
-  const [currentMenuKey, setCurrentMenuKey] = useState('manage');
-  console.log('menus: ', menus)
 
   function changeSiderMenus(key) {
     return menus.map(item => {
@@ -32,7 +45,13 @@ function App() {
   function handleClick(e) {
     console.log('e: ', e);
     setCurrentHeadMenuKey(e.key);
-    navigate(`/${e.key}`);
+    if (e.key === 'doc') {
+      navigate(`/${e.key}/manage`);
+    } else if (e.key === 'dev') {
+      navigate(`/${e.key}/desc`);
+    } else {
+      navigate(`/${e.key}`)
+    }
     changeSiderMenus(e.key);
   }
   function renderSiderMenus(data) {
@@ -65,12 +84,17 @@ function App() {
     const { keyPath } = e;
     const sup = keyPath[keyPath.length - 1];
     const sub = keyPath[keyPath.length - 2] || 'index';
-    navigate(`/${currentHeadMenuKey}/${sup}/${sub}`);
     console.log('sub: ', sub);
-    scrollToAnchor(sub)
+    if (sub.indexOf('0') !== -1) {
+      navigate(`/${currentHeadMenuKey}/${sup}`);
+      scrollToAnchor('top');
+    } else {
+      navigate(`/${currentHeadMenuKey}/${sup}`);
+      scrollToAnchor(sub);
+    }
   }
   return (
-    <Layout>
+    <Layout id="top">
       <Sider
         style={{
           overflow: 'auto',
@@ -85,7 +109,7 @@ function App() {
         </div>
         <Menu
           mode="inline"
-          defaultSelectedKeys={['doc-manage-1']}
+          defaultSelectedKeys={['doc-manage-0']}
           defaultOpenKeys={['manage']}
           onClick={siderHandleClick}
         >
@@ -104,13 +128,6 @@ function App() {
             }
           </Menu>
         </Header>
-        <Breadcrumb style={{ padding: '16px' }}>
-          {
-            keyPath.map((item, index) => {
-              return <Breadcrumb.Item key={index}>{item}</Breadcrumb.Item>
-            })
-          }
-        </Breadcrumb>
         <Content
           style={{ margin: '0px 20px', overflow: 'initial' }}
         >
@@ -118,7 +135,7 @@ function App() {
             <Routes />
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>A low code editor tiangg</Footer>
+        <Footer style={{ textAlign: 'center' }}>A low code editor - tiangg</Footer>
       </Layout>
     </Layout>
   );

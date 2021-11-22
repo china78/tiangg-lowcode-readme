@@ -7,7 +7,7 @@ const Manage = () => {
     <div>
       <Title level={2}>项目管理</Title>
       <p>
-        tiangg项目后台是码良编辑器的入口，提供了项目管理、资源管理、数据统计等功能。
+        tiangg项目后台是tiangg编辑器的入口，提供了项目管理、资源管理、数据统计等功能。
       </p>
       <div id="doc-manage-1" className="section">
         <Title level={3}>入口</Title>

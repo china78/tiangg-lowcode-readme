@@ -13,6 +13,8 @@ import DocScripts from '../pages/doc/components/docScripts';
 import Desc from '../pages/dev/components/desc';
 import ScriptDev from '../pages/dev/components/scriptDev';
 import ComponentDev from '../pages/dev/components/componentDev';
+//think
+import Think from '../pages/think';
 
 function routes() {
   return (
@@ -52,6 +54,7 @@ function routes() {
           </Route>
         </Route>
         <Route path="dev">
+          <Route index element={<Desc />} />
           <Route path="desc" element={<Desc />} >
             <Route path="*" element={<Desc />} />
           </Route>
@@ -60,6 +63,12 @@ function routes() {
           </Route>
           <Route path="component" element={<ComponentDev />} >
             <Route path="*" element={<ComponentDev />} />
+          </Route>
+        </Route>
+        <Route path="think">
+          <Route index element={<Think />} />
+          <Route path="desc" element={<Think />} >
+            <Route path="*" element={<Think />} />
           </Route>
         </Route>
       </Route>
