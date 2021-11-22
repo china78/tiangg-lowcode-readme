@@ -7,12 +7,12 @@ const Manage = () => {
     <div>
       <Title level={2}>项目管理</Title>
       <p>
-        tiangg项目后台是tiangg编辑器的入口，提供了项目管理、资源管理、数据统计等功能。
+        tiangg-admin项目是tiangg-editor的入口，提供了项目管理、资源管理、数据统计等功能。
       </p>
       <div id="doc-manage-1" className="section">
         <Title level={3}>入口</Title>
         <Divider />
-        <p>由tiangg项目后台进入，使用邮箱密码登陆系统。</p>
+        <p>由tiangg-admin后台进入，使用邮箱密码登陆系统。</p>
       </div>
       <div id="doc-manage-2" className="section">
         <Title level={3}>概念</Title>
