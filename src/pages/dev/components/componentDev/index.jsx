@@ -119,7 +119,7 @@ export default {
 
 <script>
   export default {
-    name: 'maliangeditor',
+    name: 'tiangg-editor',
     props: {
       componentInfo: Object
     },

@@ -261,7 +261,7 @@ export const menus = [
       },
       {
         key: 'component',
-        title: '脚本开发',
+        title: '组件开发',
         children: [
           {
             key: 'dev-component-0',

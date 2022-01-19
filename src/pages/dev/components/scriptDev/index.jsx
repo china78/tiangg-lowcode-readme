@@ -234,7 +234,7 @@ return {
       </div>
       <p>以上几行代码实现了一个超级简单的脚本！使用了此脚本的组件会在其 <code>mounted</code> 生命周期打印出 <code>hello world</code>。</p>
       <p>所以，如上所示，脚本就是一个 Vue 配置对象(option object)。是的，就是这么简单！</p>
-      <p>除原生 Vue 配置属性外，我们提供了自定义属性、自定义方法添加方案、以及 <code>vm.$options.$lib</code>、数据总线等服务。</p>
+      <p>除原生 Vue 配置属性外，我提供了自定义属性、自定义方法添加方案、以及 <code>vm.$options.$lib</code>、数据总线等服务。</p>
       <div id="dev-script-1" className="section">
         <Title level={3}>添加自定义属性</Title>
         <Divider />
@@ -312,7 +312,7 @@ return {
         </div>
         <div className="section">
           <Title level={4}>模板字符串编译</Title>
-          <p>我们提供了通过模板字符串快速访问数据的能力。</p>
+          <p>我提供了通过模板字符串快速访问数据的能力。</p>
           <p>对于用户的输入（通过某属性），当检测到形如 <code>${`{a.b.c}`}</code> 或者 <code>${`{$scope.x}`}</code>的片段，我们会对其进行编译替换。</p>
           <p>形如 <code>${`{a.b.c}`}</code> 从DataHub取值；形如<code>${`{$scope.x}`}</code>从上级组件传入该组件的数据中取值，如列表容器传给列表项的数据</p>
           <p>模板字符串甚至还支持过滤器，如 <code>${`{a.b.c | datatime}`}</code>。tiangg编辑器默认提供了一些过滤器，见过滤器。也可通过脚本编写自定义过滤器。</p>

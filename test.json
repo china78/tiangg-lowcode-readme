@@ -1,0 +1,69 @@
+{
+  "title": "我是美丽的标题",
+  "": "121",
+  "baseInfo": {
+    "caseName": "121"
+  }
+}
+{
+  "title": "杭州市共同富裕标志性成果申报",
+  "baseInfo": {
+    "name": "",
+    "picture": {},
+    "location": "",
+    "team": "",
+    "describe": "",
+    "achievements": [
+      {
+        "name": "",
+        "data": "",
+        "unit": ""
+      },
+      {
+        "name": "",
+        "data": "",
+        "unit": ""
+      }
+    ],
+    "casePictures": [
+      {
+        "name": "",
+        "fileList": []
+      },
+      {
+        "name": "",
+        "fileList": []
+      }
+    ],
+    "video": {
+      "videoList": [],
+      "imgList": []
+    }
+  },
+  "information": [
+    {
+      "title": "",
+      "content": "",
+      "fileList": []
+    },
+    {
+      "title": "",
+      "content": "",
+      "fileList": []
+    }
+  ],
+  "files": [
+    {
+      "name": "",
+      "fileList": []
+    },
+    {
+      "name": "",
+      "fileList": []
+    }
+  ],
+  "connect": {
+    "contacts": "",
+    "tel": ""
+  }
+}
