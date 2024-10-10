@@ -12,9 +12,9 @@ import componentDev08 from '../../../../assets/imgs/componentDev08.png';
 import componentDev09 from '../../../../assets/imgs/componentDev09.png';
 import componentDev10 from '../../../../assets/imgs/componentDev10.png';
 // import componentDev11 from '../../../../assets/imgs/componentDev11.png';
-import componentAttr02 from '../../../../assets/imgs/componentAttr02.png';
-import componentAttr03 from '../../../../assets/imgs/componentAttr03.png';
-import componentAttr04 from '../../../../assets/imgs/componentAttr04.png';
+// import componentAttr02 from '../../../../assets/imgs/componentAttr02.png';
+// import componentAttr03 from '../../../../assets/imgs/componentAttr03.png';
+// import componentAttr04 from '../../../../assets/imgs/componentAttr04.png';
 const { Title } = Typography;
 
 const ComponentDev = () => {
